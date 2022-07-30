@@ -1,0 +1,26 @@
+.Diference {
+  display: flex;
+  margin-bottom: 10px;
+  column-gap: 1.5em;
+}
+
+.index button{
+  padding: 0.3em 1em;
+}
+
+.DiferenceEnum {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.DiferenceEnum h1 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.DiferenceEnum p {  
+  font-size: 1em;
+  color: var(--DarkGrayishBlue);
+}

@@ -1,0 +1,21 @@
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3em 0;
+  width: 80%;
+}
+
+.NavComponents{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.NavComponent{
+  font-size: 0.7em;
+}
+
+.Logo {
+  height: 15px;
+}

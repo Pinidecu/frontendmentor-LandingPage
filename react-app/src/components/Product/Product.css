@@ -1,0 +1,39 @@
+.Products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4em 0;
+  width: 80%;
+}
+
+.InfoProducts {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.6em;
+}
+
+.InfoProducts h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.InfoProducts p {
+  font-size: 0.95em;
+  width: 80%;
+  color: var(--DarkGrayishBlue);
+}
+
+.StatsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 50%;
+}
+.Ilustration{
+  width: 90%;
+}
+
+
+

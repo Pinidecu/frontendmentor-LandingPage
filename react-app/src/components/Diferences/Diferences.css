@@ -1,0 +1,30 @@
+.Diferences {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.InfoDiferences {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.InfoDiferences h1 {
+  font-size: 2em;
+  margin:0 0 0.6em 0;
+}
+
+.InfoDiferences p{
+  width: 65%;
+  font-size: 0.95em;
+  color: var(--DarkGrayishBlue);
+  margin: 0;
+}
+
+.EnumDiferences{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+

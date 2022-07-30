@@ -1,0 +1,24 @@
+.Testimonios { 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.InfoTestimonios h1{
+  font-size: 2em;
+}
+
+.EnumTests{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  margin: 50px 0 25px 0;
+  overflow:scroll;
+  width: 100%;
+  background-color: red;
+  padding: 20px 0;
+}
+
