@@ -57,7 +57,7 @@ export default function Footer() {
           <div className="FormContainer">
             <div className='InputContainer'>
               <input type="text" placeholder='Updates in your inbox…' className={message === "Plese insert a valid email" ? "Error": null} value={input} onChange={(e)=> handleInputChange(e)}/>
-              <p className={message==="Email loaded" ? "Correct": 'ErrorMessage'}>{message}</p>
+              <p className={message==="Email loaded" ? "Correct ErrorMessage" : "ErrorMessage"}>{message}</p>
             </div>
             <button onClick={(e)=> sendForm(e)}>Go</button>
           </div>

@@ -93,21 +93,15 @@
 }
 .ErrorMessage{
   position: absolute;
-  bottom: -30px;
-  left: 0.75em;
+  bottom: -3em;
+  left: 1.25em;
   color:rgb(255, 61, 61);
   font-style: italic;
   align-self: flex-start;
   font-size: 0.6em;
 }
 .Correct{
-  position: absolute;
-  bottom: -30px;
-  left: 0.75em;
   color:rgb(106, 255, 61);
-  font-style: italic;
-  align-self: flex-start;
-  font-size: 0.6em;
 }
 
 
@@ -167,5 +161,9 @@
     display: block;
     color:white;
     font-size: 0.7em;
+  }
+  .ErrorMessage{
+    bottom: -3em;
+    left: 3.5em;
   }
 }
