@@ -64,24 +64,50 @@
   justify-content: space-between;
 }
 
-.InputContainer{
+.FormContainer{
   display: flex;
   column-gap: 0.5em;
 }
 
-.InputContainer input{
+.FormContainer input{
   border-radius: 5em;
   padding: 0.75em;
   border: none;
 }
 
-.InputContainer input::placeholder {
+.Error{  
+  color: red;
+}
+
+.FormContainer input::placeholder {
   color: var(--DarkGrayishBlue);
   font-size: 0.9em;
 }
 
-.InputContainer button{
+.FormContainer button{
   box-shadow: none;
+}
+
+.InputContainer{
+  position: relative;
+}
+.ErrorMessage{
+  position: absolute;
+  bottom: -30px;
+  left: 0.75em;
+  color:rgb(255, 61, 61);
+  font-style: italic;
+  align-self: flex-start;
+  font-size: 0.6em;
+}
+.Correct{
+  position: absolute;
+  bottom: -30px;
+  left: 0.75em;
+  color:rgb(106, 255, 61);
+  font-style: italic;
+  align-self: flex-start;
+  font-size: 0.6em;
 }
 
 
