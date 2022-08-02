@@ -1,5 +1,5 @@
 import './Footer.css';
-import Logo from '../../images/logo.svg' 
+import Logo from '../../images/logo-white.svg' 
 import { ReactComponent as Facebook } from '../../images/icon-facebook.svg' 
 import { ReactComponent as Instagram } from '../../images/icon-instagram.svg' 
 import { ReactComponent as Pinterest } from '../../images/icon-pinterest.svg' 
