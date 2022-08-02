@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar';
 import OrangeBar from './components/OrangeBar/OrangeBar';
 import Product from './components/Product/Product';
 import Testimonios from './components/Testimonios/Testimonios';
+import bg from "./images/bg-tablet-pattern.svg"
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Testimonios/>
       <OrangeBar/>
       <Footer/>
+      <img src={bg} alt='bgTop' className="bgTop"/>
+      <img src={bg} alt='bgBottom' className="bgBottom"/>
     </div>
   );
 }

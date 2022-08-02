@@ -1,26 +1,58 @@
 .Diference {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   margin-bottom: 10px;
-  column-gap: 1.5em;
+  align-items: center;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  grid-column-start:1; 
+  grid-column-end: 3; 
+  column-gap: 0.5em;
+  margin: 0;
+}
+.index{
+  margin: 0;
+  padding: 0;
+  z-index: 2;
 }
 
 .index button{
-  padding: 0.3em 1em;
+  padding: 0.5em 1.5em;
+  box-shadow: none;
+  font-size: 1.2em;
+  height: 35px;
 }
 
-.DiferenceEnum {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.DiferenceEnum h1 {
+.Diference h1 {
   font-size: 1.1em;
-  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
-.DiferenceEnum p {  
+.Diference p {  
   font-size: 1em;
   color: var(--DarkGrayishBlue);
+  grid-column-start:2; 
+  grid-column-end: 3; 
+}
+
+@media (max-width: 576px) {
+  .Diference h1{    
+    height: 35px;
+    background-color: #FFF0EB;
+    width: 100%;
+    z-index: 1;
+    box-shadow: #FFF0EB 3em 0px 0px, #FFF0EB -4em 0px 0px;
+  }
+  .Diference h1 {
+    font-size: 1.3em;
+  }
+  .Diference p {  
+    font-size: 1.3em;
+    grid-column-start:1; 
+    grid-column-end: 3; 
+  }
 }

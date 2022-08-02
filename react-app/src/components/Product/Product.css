@@ -1,8 +1,10 @@
+
+
 .Products {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4em 0;
+  margin: 2em 0;
   width: 80%;
 }
 
@@ -37,3 +39,40 @@
 
 
 
+@media (max-width: 768px) {
+  .Products {
+    width: 90%;
+  }
+  .InfoProducts h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .Products {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  .InfoProducts {
+    width: 100%;
+    align-items: center;
+  }
+  .InfoProducts h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+  .InfoProducts p {
+    font-size: 1.6em;
+    width: 90%;
+    text-align: center;
+  }
+  .InfoProducts button {
+    font-size: 1.6em;
+    padding: 0.5em 1em;
+  }
+  .StatsContainer{
+    width: 100%;    
+    justify-content: center;
+  }
+}

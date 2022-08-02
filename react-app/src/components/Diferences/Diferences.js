@@ -15,7 +15,7 @@ export default function Diferences() {
       <div className="EnumDiferences">
         {enums.map(dif=>{
           return(            
-        <Diference title={dif.title} info={dif.info} index={dif.index}/>
+        <Diference title={dif.title} info={dif.info} index={dif.index} key={dif.index}/>
           )
         })}
       </div>

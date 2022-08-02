@@ -4,21 +4,49 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin: 5em 0;
+  width: 100%;
 }
 
 .InfoTestimonios h1{
   font-size: 2em;
 }
 
-.EnumTests{
+#EnumTests{
   display: flex;
   flex-direction: row;
   text-align: center;
-  width: 100%;
   margin: 50px 0 25px 0;
   overflow:scroll;
-  width: 100%;
-  background-color: red;
   padding: 20px 0;
+  width: 100%;
 }
 
+.ImgSelectContainer{
+  display: flex;
+  margin: 2em;
+  column-gap: 0.6em;
+}
+.ImgSelect{
+  visibility: hidden;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border: 1px var(--BrightRed) solid;
+}
+.Selected{
+  background-color: var(--BrightRed);
+}
+
+@media (max-width: 576px) {
+  .StartButton button {
+    font-size: 1.6em;
+    padding: 0.5em 1em;
+  }
+  .ImgSelect{
+    visibility: visible;
+  }
+}

@@ -1,3 +1,10 @@
+.NavBarContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .NavBar {
   display: flex;
   align-items: center;
@@ -6,16 +13,77 @@
   width: 80%;
 }
 
+
 .NavComponents{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  column-gap: 30px;
+  column-gap: 1.875em;
 }
 
 .NavComponent{
-  font-size: 0.7em;
+  font-size: 12px;
+  cursor: pointer;
+}
+.NavComponent:hover{
+  color: var(--DarkGrayishBlue);
 }
 
 .Logo {
   height: 15px;
+}
+
+.Hamburger{
+  display: none;
+}
+
+.HamburgerMenu{
+  display: none;
+}
+
+.MenuClose{
+  display: none;
+}
+.Close{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .NavBar {
+    width: 90%;
+  }
+  .NavComponents{
+    column-gap: 0.8em;
+  }
+}
+@media (max-width: 576px) {
+  .NavBar{
+    margin-bottom: 0;
+  }
+  .NavComponents {
+    display: none;
+  }
+  .ButtonStartNav{
+    display: none;
+  }
+  .Hamburger{
+    display: flex;
+    z-index: 100;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .HamburgerMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color:white;
+    padding: 2.5em 0;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  .HamburgerMenu p {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
 }
